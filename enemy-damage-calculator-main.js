@@ -48,16 +48,23 @@ function validateInputs(enemyDmg, IDR, armorAbsorption, armorDura, armorEnd, pla
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    let enemyDmg = parseInt(form.elements['enemyDmg'].value);
-    let IDR = parseInt(form.elements['IDR'].value);
-    let armorAbsorption = parseInt(form.elements['armorAbsorption'].value);
-    let armorDura = parseInt(form.elements['armorDura'].value);
-    let armorEnd = parseInt(form.elements['armorEnd'].value);
-    let playerEnd = parseInt(form.elements['playerEnd'].value);
+    let enemyDmg = form.elements['enemyDmg'].value;
+    let IDR = form.elements['IDR'].value;
+    let armorAbsorption = form.elements['armorAbsorption'].value;
+    let armorDura = form.elements['armorDura'].value;
+    let armorEnd = form.elements['armorEnd'].value;
+    let playerEnd = form.elements['playerEnd'].value;
 
     if(!validateInputs(enemyDmg, IDR, armorAbsorption, armorDura, armorEnd, playerEnd)) {
         return false;
     }
+
+    enemyDmg = parseInt(enemyDmg);
+    IDR = parseInt(IDR);
+    armorAbsorption = parseInt(armorAbsorption);
+    armorDura = parseInt(armorDura);
+    armorEnd = parseInt(armorEnd);
+    playerEnd = parseInt(playerEnd);
 
     let dmg = enemyDmg;
     let absorbedDmg = Math.floor(enemyDmg * (IDR / 100));
