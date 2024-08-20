@@ -1,0 +1,86 @@
+.contentContainer {
+    width: 100%;
+    height: calc(100% - 63px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculatorContainer {
+    width: 600px;
+    padding: 50px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.titleContainer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.inputForm {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+}
+
+.inputRow {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.inputContainer {
+    width: 175px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm label {
+    padding: 10px 0;
+}
+
+.inputContainer input {
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 2px;
+}
+
+.calculateButton {
+    width: 100px;
+    height: 30px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--main-accent);
+    border-radius: 2px;
+    border: 0;
+    color: white;
+}
+
+.calculateButton:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: var(--main-accent-transition);
+    color: rgb(228, 227, 227);
+}
+
+.errorContainer {
+    width: 80%;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #816161;
+    border: 1px solid #553e3e;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}

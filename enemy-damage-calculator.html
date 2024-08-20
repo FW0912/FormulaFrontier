@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Enemy Damage Calculator | FormulaFrontier </title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="enemy-damage-calculator.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navTitle"><a href="/FormulaFrontier">FormulaFrontier</a></li>
+            <li class="navButton"><a href="/FormulaFrontier/enemy-damage-calculator.html">Enemy Damage Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="contentContainer">  
+        <div class="calculatorContainer">
+            <div class="titleContainer"> Enemy Damage Calculator </div>
+
+            <form class="inputForm" id="calculateEnemyDmgForm">
+                <div class="inputRow">
+                    <div class="inputContainer">
+                        <label for="enemyDmgInput"> Enemy Damage </label>
+                        <input type="number" id="enemyDmgInput" name="enemyDmg" placeholder="example: 250">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="IDRInput"> IDR (%) </label>
+                        <input type="number" id="IDRInput" name="IDR" placeholder="example: 10">
+                    </div>
+                </div>
+                
+                <div class="inputRow">
+                    <div class="inputContainer">
+                        <label for="armorAbsorptionInput"> Armor Absorption (%) </label>
+                        <input type="number" id="armorAbsorptionInput" name="armorAbsorption" placeholder="example: 85">
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <label for="armorDuraInput"> Armor Durability </label>
+                        <input type="number" id="armorDuraInput" name="armorDura" placeholder="example: 350">
+                    </div>
+                </div>
+                
+                <div class="inputRow">
+                    <div class="inputContainer">
+                        <label for="armorEndInput"> Armor Endurnace </label>
+                        <input type="number" id="armorEndInput" name="armorEnd" placeholder="example: 24">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="playerEndInput"> Player Endurance </label>
+                        <input type="number" id="playerEndInput" name="playerEnd" placeholder="example: 100">
+                    </div>
+                </div>
+
+                <button type="submit" value="Calculate" class="calculateButton"> Calculate </button>
+            </form>
+
+            <div class="errorContainer" id="errorContainer">
+                <div id="error"></div>
+            </div>
+            
+            <div class="outputContainer">
+                <div id="output"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="enemy-damage-calculator-main.js"></script>
+</body>
+</html>

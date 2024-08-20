@@ -1,0 +1,56 @@
+:root {
+    --main-accent: #23293d;
+    --main-accent-transition: #1a1f30;
+    --body-background: #0f0f13;
+    --input-background: #ebebeb;
+    --input-border: #999999;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-background);
+    color: white;
+}
+nav {
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-accent);
+    display: flex;
+    align-items: center;
+  }
+  
+nav li {
+    float: left;
+    font-size: 20px;
+}
+
+.navTitle a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navButton a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navButton a:hover {
+    background-color: var(--main-accent-transition);
+    transition: all 0.2s ease-in-out;
+}
